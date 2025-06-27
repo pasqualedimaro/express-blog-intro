@@ -33,29 +33,29 @@ app.get ("/api/posts", (req,res)=>{
     const post = [
     {
         title:"Ciambellone",
-        image: "public/images/ciambellone.jpeg",
+        image: `http://localhost:${port}/images/ciambellone.jpeg`,
         content: "dolce semplice da fare, perfetto per colazione",
         tags: ["dolci", "ricetta","colazione"]
     }, {
         title:"Creakers alla barbabietola",
-        image: "public/images/cracker_barbabietola.jpeg",
+        image: `http://localhost:${port}/images/cracker_barbabietola.jpeg`,
         content: "snack genuino per fare merenda ",
         tags: ["snack", "barbabietola","merenda"]
     }, {
         title:"Pane fritto dolce",
-        image: "public/images/pane_fritto_dolce.jpeg",
+        image: `http://localhost:${port}/images/pane_fritto_dolce.jpeg`,
         content: "dolce tradizionale fritto e molto gustoso",
         tags: ["dolce", "tradizione","fritto"]
 
     }, {
         title:"Pasta alla Barbabietola",
-        image: "public/images/pasta_barbabietola.jpeg",
+        image: `http://localhost:${port}/images/pasta_barbabietola.jpeg`,
         content: "Primo piatto molto colorato e genuino",
         tags: ["pasta", "barbabietola","primo"]
 
     }, {
         title:"Torta paesana",
-        image: "public/images/torta_paesana.jpeg",
+        image: `http://localhost:${port}/images/torta_paesana.jpeg`,
         content: "dolce rustico come lo facevano le nostre nonne ",
         tags: ["torta", "nonna","uvetta"]
 
@@ -65,3 +65,6 @@ app.get ("/api/posts", (req,res)=>{
   res.json(post)
 
 })
+
+// ora che il mio server funziona provato su postman con localhost:3050/api/posts 
+// trasformo i percorsi relativi alle immagini in URL usando i backtick
