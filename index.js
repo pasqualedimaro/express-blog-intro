@@ -14,3 +14,9 @@ const port = 3050
 app.listen(port,() =>{
     console.log (`server avviato su http://localhost:${port}`)
 })
+
+// creo una prima rotta che mi restituisce un semplice testo
+
+app.get("/", (req, res)=>(
+    res.send("Server del mio blog")
+))
