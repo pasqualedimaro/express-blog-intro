@@ -20,3 +20,6 @@ app.listen(port,() =>{
 app.get("/", (req, res)=>(
     res.send("Server del mio blog")
 ))
+
+// creo una seconda rotta che mi deve restituire un oggetto json con la lista dei post
+
